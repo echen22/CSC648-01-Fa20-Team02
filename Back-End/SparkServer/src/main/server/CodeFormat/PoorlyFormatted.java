@@ -2,44 +2,29 @@ package main.server.CodeFormat;
 
 public class PoorlyFormatted {
 
-    private
-    Integer
-    thisIsBadCode = 100;
+  private Integer thisIsBadCode = 100;
 
-    PoorlyFormatted(Integer badCode) {this.thisIsBadCode
-            =
-            badCode;
+  PoorlyFormatted(Integer badCode) {
+    this.thisIsBadCode = badCode;
+  }
+
+  public Integer badLoop() {
+    Integer count = 0;
+
+    for (int i = 0; i < thisIsBadCode; i++) {
+      count--;
     }
 
-    public Integer badLoop() {
-        Integer count = 0;
+    return count;
+  }
 
-        for(
-                int i = 0;
-                i < thisIsBadCode;
-                i++) {
-    count--;
-        }
+  public Integer getThisIsBadCode() {
 
-        return
-                count;
-    }
+    return this.thisIsBadCode;
+  }
 
-    public Integer getThisIsBadCode()
+  public void setThisIsBadCode(Integer worseCode) {
 
-    {
-        return
-                this.thisIsBadCode;
-    }
-
-    public void setThisIsBadCode(Integer
-                                 worseCode) {
-
-
-        this.thisIsBadCode =
-
-                worseCode;
-    }
-
-
+    this.thisIsBadCode = worseCode;
+  }
 }
